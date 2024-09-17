@@ -1,17 +1,17 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
-import 'package:untitled1/Controller/custom_dialogs.dart';
+
 import 'package:untitled1/Controller/dialog_helper.dart';
 import 'package:untitled1/Model/SytemUser/vkyc_requestdata.dart';
-import 'package:untitled1/View/widgets/custom_button_widgets.dart';
+
 import 'package:untitled1/main.dart';
 import 'package:untitled1/res/colors.dart';
 import 'package:untitled1/util/responsive_widget_builder.dart';
-import '../../../Controller/custom_alert_dialog.dart';
+
 import '../../../Controller/custom_progress_dialog.dart';
 import '../../../Controller/jlg_group_api.dart';
-import '../../../Controller/web_view.dart';
+
 import '../../../Network/shared_preferences.dart';
 import '../../../util/ApiConstants.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -35,7 +35,7 @@ class _VideoKycRequestState extends State<VideoKycRequest> {
   @override
   Widget build(BuildContext context) {
     requests.sort((a, b) => b.requestedon.compareTo(a.requestedon));
-    return Scaffold(
+    return Scaffold(   
       appBar: AppBar(
         title: Text('Video KYC Request'),
         centerTitle: true,
@@ -106,7 +106,7 @@ class _VideoKycRequestState extends State<VideoKycRequest> {
               ElevatedButton(onPressed: () {
                 acceptKycRequest(utype, vkycreqno);
               }, child: Text('Accept'), style: ElevatedButton.styleFrom(
-                primary: Colors.teal, // Set button color
+                //primary: Colors.teal, // Set button color
                 textStyle: TextStyle(fontSize: 16), // Set text style
                 padding: EdgeInsets.symmetric(
                     horizontal: 20, vertical: 10), // Set padding

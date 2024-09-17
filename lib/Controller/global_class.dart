@@ -1,5 +1,10 @@
 class GlobalValues {
   static String _borrowerName = "";
+  static String  _referenceNo = "";
+  static bool _encrypted = false;
+  static String _secretKey = "";
+  static String _mobile = "";
+
   static String userName = "";
   static final GlobalValues _instance = GlobalValues._internal();
   GlobalValues._internal();
@@ -25,6 +30,38 @@ class GlobalValues {
   static String getBorrowerName() {
     return _borrowerName;
   }
+  static void setSecretKey(String secretKey) {
+    _secretKey = secretKey;
+  }
+
+  static String getSecretKey() {
+    return _secretKey;
+  }
+  static void setMobile(String mobile) {
+    _mobile = mobile;
+  }
+
+  static String getMobile() {
+    return _mobile;
+  }
+
+
+  static void setEncrypted(bool encrypted) {
+    _encrypted = encrypted;
+  }
+
+  static bool getEncrypted() {
+    return _encrypted;
+  }
+  static void setReferenceNo(String referenceNo) {
+    _referenceNo = referenceNo;
+  }
+
+  static String getReferenceNo() {
+    return _referenceNo;
+  }
+
+
   static void setKYCStatus(String name) {
     _borrowerName = name;
   }

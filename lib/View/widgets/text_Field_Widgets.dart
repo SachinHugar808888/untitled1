@@ -5,14 +5,16 @@ class CustomTextField extends StatelessWidget {
   final String labelText;
   final IconData suffixIcon;
   final TextInputType keyboardType;
-  final FocusNode? focusNode; // Make FocusNode optional
+  final FocusNode? focusNode;
+  // Make FocusNode optional
 
   CustomTextField({
     required this.controller,
     required this.labelText,
     required this.suffixIcon,
     required this.keyboardType,
-    this.focusNode, // Update the constructor to accept focusNode
+    this.focusNode,
+    // Update the constructor to accept focusNode
   });
 
   @override

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled1/Controller/global_class.dart';
+import 'package:untitled1/View/SystemUserDashboard/bulkRegistration.dart';
 import 'package:untitled1/View/SystemUserDashboard/video_kyc/video_kyc_request.dart';
 import 'package:untitled1/res/strings.dart';
 import 'package:untitled1/util/responsive_widget_builder.dart';
@@ -77,11 +78,19 @@ class SystemUserDashboard extends StatelessWidget {
                   ),
                   Flexible(
                     flex: 1,
-                    child: _buildCard(
-                      context,
-                      Icons.list,
-                      AppStrings.grievance,
-                      Colors.blueAccent,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => BulkRegistration()),
+                        );
+                      },
+                      child: _buildCard(
+                        context,
+                        Icons.list,
+                        AppStrings.grievance,
+                        Colors.blueAccent,
+                      ),
                     ),
                   ),
                   Flexible(
@@ -151,11 +160,19 @@ class SystemUserDashboard extends StatelessWidget {
                     ),
                   ),
                   Flexible(
-                    child: _buildCard(
-                      context,
-                      Icons.list,
-                      AppStrings.grievance,
-                      Colors.blueAccent,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => BulkRegistration()),
+                        );
+                      },
+                      child: _buildCard(
+                        context,
+                        Icons.list,
+                        AppStrings.grievance,
+                        Colors.blueAccent,
+                      ),
                     ),
                   ),
                 ],

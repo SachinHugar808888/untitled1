@@ -11,6 +11,21 @@ class ApiConstants {
   static const String getVkycRequestStatusService= 'vf/getvkycrequeststatus';
   static const String vkycrequest= 'vf/getvkycrequests';
   static const String acceptVkycRequest= 'vf/getvkycrequests';
+  static const String completeOtp= 'usrmgmt/p2pusers/v2/login';
+  static const String generateSecretKey= 'usrmgmt/getkey';
+  static const String getDueLoans= 'lms/getdueloans';
+  static const String getBorProfileInfo= 'lsp/getborprofileinfo';
+  static const String getRepaymentBreakdown = "lsp/getrepaymentbreakdown";
+  static const String generateQRCode = "lms/getpaymentqrcode";
+  static const String payUsingUpiId = "lms/getpaymentcollectrequest";
+  static const String bulkRegistration = "usrmgmt/bulkregistration";
+  static const String importLoans ="cms/bulkuploadcmsloans";
+
+
+
+
+
+
 
 
 

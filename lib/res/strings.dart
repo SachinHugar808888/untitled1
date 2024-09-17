@@ -44,6 +44,14 @@ class AppStrings {
   static const String platformsigning ="Platform Signing Documents";
 
 
+  //Collector Dashboard
+  static const String collectorDashboard ="Collector Dashboard";
+  static const String selectAccount ="Select Loan Accounts";
+  static const String activeLoanAccount = "Active Loan Accounts";
+  static const String overdueLoanAccount = "Overdue Loan Accounts";
+  static const String npaLoanAccount = "NPA Loan Accounts";
+
+
 
 
 

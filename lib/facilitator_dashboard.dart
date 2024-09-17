@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled1/View/auth/customer_support.dart';
 import 'package:untitled1/View/auth/jlg_registration.dart';
+import 'package:untitled1/View/auth/loan_monitoring.dart';
 import 'package:untitled1/View/screens/dashboard.dart';
 import 'package:untitled1/res/strings.dart';
 import 'package:untitled1/util/responsive_widget_builder.dart';
@@ -11,15 +12,13 @@ import 'View/screens/notifications/local_notification.dart';
 import 'main.dart';
 
 class FacilitatorDashboard extends StatefulWidget {
-  final String resetPassword;
-  final String resetPasswordMsg;
 
 
-  FacilitatorDashboard({
-    required this.resetPassword,
-    required this.resetPasswordMsg,
 
-  });
+  final String tokenType;
+  final String accessToken;
+
+  FacilitatorDashboard(this.tokenType, this.accessToken);
 
   @override
   State<FacilitatorDashboard> createState() => _FacilitatorDashboardState();
@@ -87,6 +86,10 @@ class _FacilitatorDashboardState extends State<FacilitatorDashboard> {
           }),
           buildDrawerItem('Profile', Icons.app_registration, () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen(),));
+
+          }),
+          buildDrawerItem('Loan Monitoring', Icons.money, () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => LoanMonitoring(),));
 
           }),
           buildDrawerItem('Create JLG', Icons.groups_outlined, () {
